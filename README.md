@@ -2,7 +2,7 @@
 
 [Demo Video](https://www.loom.com/share/a083f1a302f24b79931035e098ad6af4?sid=5be98c5f-3256-4191-98be-92da851bcfc4 )
 
-[Visit site](https://web3lance.vercel.app/)
+[Visit site](https://web3-lance.vercel.app/)
 
 Smart Contract Deployed on Polygon Mumbai Testnet
 
