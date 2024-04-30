@@ -3,7 +3,7 @@ import abi from "./Escrow.json"
 import { ethers } from "ethers";
 
 const ConnectContext = createContext();
-const CONTRACT_ADDRESS = "0xea3e1D27A82DC53a960741485b16F9893Ee3b6f1";
+const CONTRACT_ADDRESS = "0x5b1C974C5bCC8bd70447f5b9403a6729f7Aba12f";
 const contractABI = abi.abi;
 
 export const useConnect = () => {

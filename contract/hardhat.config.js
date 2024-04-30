@@ -13,9 +13,11 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
 module.exports = {
   solidity: "0.8.19",
   networks: {
-    mumbai: {
-      url: process.env.QUICKNODE_API_URL,
-      accounts: [process.env.PRIVATE_MUMBAI_ACCOUNT_KEY],
+    amoy: {
+      url: "https://dimensional-ultra-hexagon.matic-amoy.quiknode.pro/395fdf5bea5e948fdc87e81769d5b81563d724dd/",
+      accounts: [
+        process.env.PRIVATE_KEY,
+      ],
     },
   },
 };
