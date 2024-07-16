@@ -1,14 +1,14 @@
 <h1>Web3Lance</h1>
 
-[Demo Video](https://www.loom.com/share/a083f1a302f24b79931035e098ad6af4?sid=5be98c5f-3256-4191-98be-92da851bcfc4 )
+[Demo Video](https://www.loom.com/share/a083f1a302f24b79931035e098ad6af4?sid=5be98c5f-3256-4191-98be-92da851bcfc4)
 
 [Visit site](https://web3-lance.vercel.app/)
 
-Smart Contract Deployed on Polygon Mumbai Testnet
+Smart Contract Deployed on Polygon Amoy Testnet
 
-Contract Address - 0xea3e1D27A82DC53a960741485b16F9893Ee3b6f1
+Contract Address - 0x5b1C974C5bCC8bd70447f5b9403a6729f7Aba12f
 
-[View on Polygonscan](https://mumbai.polygonscan.com/address/0xea3e1D27A82DC53a960741485b16F9893Ee3b6f1#internaltx)
+[View on Polygonscan](https://amoy.polygonscan.com/address/0xea3e1D27A82DC53a960741485b16F9893Ee3b6f1#internaltx)
 
 <h2>Table of Contents 📑</h2>
 
@@ -47,10 +47,8 @@ Web3Lance is a decentralized application (dApp) built on Polygon blockchain usin
 - **JavaScript**: The primary programming language used for the frontend development.
 - **Solidity**: A smart contract programming language used for developing Ethereum-based smart contracts.
 - **MetaMask**
-  
 
 <h2>Project Overview 📝</h2>
-
 
 The Web3Lance project aims to create a transparent and secure platform for facilitating transactions, particularly useful for e-commerce, freelancing, and digital goods exchanges. It allows users to create escrow contracts, hold funds in a secure manner, and ensure successful delivery before releasing the funds to the seller.
 
@@ -66,14 +64,14 @@ The Web3Lance project aims to create a transparent and secure platform for facil
 Follow these steps to set up the project locally:
 
 1. Clone the repository: `git clone <repository-url>`
-2. Change into the project directory 
+2. Change into the project directory
 3. Install dependencies: `yarn`
 
 <h2>Setting Up Contract🛠️</h2>
 
 1. `cd contract`
 2. Install dependencies: `yarn`
-3. Compile and deploy the contract: `npx hardhat run scripts/deploy.js --network localhost`
+3. Compile and deploy the contract: `npx hardhat run scripts/deploy.js --network amoy`
 4. Change the contract address in `CONTRACT ADDRESS` in `components/ConnectProvider.js` to the address of the deployed contract.
 
 <h2>Usage 🚀</h2>
