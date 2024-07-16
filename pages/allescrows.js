@@ -16,7 +16,7 @@ import { useToast } from '@chakra-ui/react'
 
 export default function Dashboard() {
     const { walletAddress, contract, loading } = useConnect();
-    const [ allItems, setAllItems ] = useState([]);
+    const [allItems, setAllItems] = useState([]);
     const toast = useToast()
     const toastIdRef = useRef()
 
@@ -60,7 +60,7 @@ export default function Dashboard() {
 
     useEffect(() => {
         getAllEscrows();
-    }, [ contract ]);
+    }, [contract]);
 
     if (loading) {
         return <Text>Loading...</Text>
@@ -83,12 +83,12 @@ export default function Dashboard() {
                         >
                             <Flex justifyContent={"space-between"} alignItems={"center"} width={"100%"}>
                                 <Text fontSize={"2xl"} fontWeight={"bold"} color={"white"}>{item.purpose}</Text>
-                                <Badge colorScheme="green">{status[ item.status ]}</Badge>
+                                <Badge colorScheme="green">{status[item.status]}</Badge>
                             </Flex>
                             <Text fontSize={"4xl"} color={"gray.400"} mt={4}>{ethers.formatEther(item.amount)} MATIC</Text>
+                            {item.status > 0 && <Text fontSize={"sm"} color={"gray.400"} mt={2}>Provider {item.provider.substring(0, 6) + "..." + item.provider.slice(-4)}</Text>}
                             {
                                 walletAddress.toLowerCase() == item.owner.toLowerCase() ? (<Text fontSize={"sm"} color={"gray.400"} mt={2}>You requested this service.</Text>) : (<>
-                                    {item.status > 0 && <Text fontSize={"sm"} color={"gray.400"} mt={2}>Provider {item.provider.substring(0, 6) + "..." + item.provider.slice(-4)}</Text>}
                                     {item.status == 0 && <Button mt={10} onClick={() => provideItem(item.itemId)}>Request to Provide</Button>}
                                     <Text fontSize={"sm"} color={"gray.400"} mt={2}>Service Requested by {item.owner.substring(0, 6) + "..." + item.owner.slice(-4)}</Text></>)
                             }
