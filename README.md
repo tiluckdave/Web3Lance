@@ -8,7 +8,7 @@ Smart Contract Deployed on Polygon Amoy Testnet
 
 Contract Address - 0x5b1C974C5bCC8bd70447f5b9403a6729f7Aba12f
 
-[View on Polygonscan](https://amoy.polygonscan.com/address/0xea3e1D27A82DC53a960741485b16F9893Ee3b6f1#internaltx)
+[View on Polygonscan](https://amoy.polygonscan.com/address/0x5b1C974C5bCC8bd70447f5b9403a6729f7Aba12f#internaltx)
 
 <h2>Table of Contents 📑</h2>
 
